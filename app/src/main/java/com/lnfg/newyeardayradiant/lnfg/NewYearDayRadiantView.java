@@ -52,7 +52,7 @@ public class NewYearDayRadiantView extends View{
     private float mLenternScaleY = 0.0f;//灯笼Y轴方向的缩放比例系数
 
     private float scaleNewYear = 0.0f;//XY轴缩放比例系数
-    private float translateNewYear = dp2px(86);//XY轴缩放比例系数
+    private float translateNewYear = dp2px(86);//XY轴移动
 
     private int mFirecrackerWidth;
     private int mFirecrackerHeight;
@@ -382,7 +382,7 @@ public class NewYearDayRadiantView extends View{
 
         animators.add(scaleAnimator);//将scaleAnimator存入animators集合中
 
-        animatorSet.setDuration(350);
+        animatorSet.setDuration(950);
         animatorSet.playTogether(animators);
         animatorSet.setInterpolator(new LinearInterpolator());
         animatorSet.start();//开始动画
@@ -425,7 +425,6 @@ public class NewYearDayRadiantView extends View{
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 scaleNewYear = (float) animation.getAnimatedValue();
-                scaleNewYear= (float) animation.getAnimatedValue();
                 isredEnvelopeTraslate = true;
                 isRedHeart = true;
                 isFirecracker = true;
@@ -463,8 +462,6 @@ public class NewYearDayRadiantView extends View{
             }
         });
     }
-
-
     /*整个画布旋转*/
     private void rotateAnimator(){
         isRotate = true;
@@ -481,11 +478,14 @@ public class NewYearDayRadiantView extends View{
         rotateAnimator.setRepeatCount(ValueAnimator.INFINITE);
         rotateAnimator.start();
     }
-
     /*转换单位*/
     private int dp2px(float dp){
         float scale = getResources().getDisplayMetrics().density;
         return (int) (dp * scale + 0.5f);
+    }
+    /*对外提供调用*/
+    public void start(){
+        startLenternAnimator();
     }
 
 }

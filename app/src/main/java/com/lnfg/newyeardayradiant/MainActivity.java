@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         dd = (NewYearDayRadiantView)findViewById(R.id.dd);
-
+//        dd.start();
 //        ScaleAnimation scaleAnimation = new ScaleAnimation(1.0f,2.0f,1.0f,2.0f);
 //        scaleAnimation.setDuration(3500);
 //        scaleAnimation.setRepeatCount(10);
