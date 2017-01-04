@@ -395,7 +395,6 @@ public class NewYearDayRadiantView extends View{
             @Override
             public void onAnimationEnd(Animator animation) {
                 startRedEnvelopeAnimator();//调用四个红包动画
-                animatorSet.cancel();
             }
 
             @Override
