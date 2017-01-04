@@ -227,7 +227,7 @@ public class NewYearDayRadiantView extends View{
             /*东北*/
             canvas.save();
             Rect srcredHeart = new Rect(0, 0, mRedHeartBitmapWidth, mRedHeartBitmapHeight);// 指定图片绘制区域
-            Rect dstredHeart = new Rect(-42, -42, 42, 42); // 指定图片在屏幕上显示的区域
+            Rect dstredHeart = new Rect(-mRedHeartBitmapWidth, -mRedHeartBitmapWidth, mRedHeartBitmapWidth, mRedHeartBitmapWidth); // 指定图片在屏幕上显示的区域
             canvas.scale(scaleNewYear*0.6f,scaleNewYear*0.6f,0,0);//原点进行缩放
             canvas.translate(translateNewYear/2,-translateNewYear/2);//移动
             canvas.rotate(45);
@@ -275,7 +275,7 @@ public class NewYearDayRadiantView extends View{
             /*东北*/
             canvas.save();
             Rect src = new Rect(0, 0, mFirecrackerWidth, mFirecrackerHeight);// 指定图片绘制区域
-            Rect dst = new Rect(-42, -42, 42, 42);// 指定图片在屏幕上显示的区域
+            Rect dst = new Rect(-mFirecrackerWidth, -mFirecrackerWidth, mFirecrackerWidth, mFirecrackerWidth);// 指定图片在屏幕上显示的区域
             canvas.scale(scaleNewYear*0.9f,scaleNewYear*0.9f,0,0);//原点进行缩放
             canvas.translate(translateNewYear*2/3,-translateNewYear*2/3);//移动
             canvas.rotate(45);
