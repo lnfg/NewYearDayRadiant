@@ -448,7 +448,7 @@ public class NewYearDayRadiantView extends View{
 
             @Override
             public void onAnimationEnd(Animator animation) {
-                rotateAnimator();//开始旋转
+                rotateAnimator();//开始旋转 没用。。。。。。。。。。
             }
 
             @Override
