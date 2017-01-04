@@ -368,7 +368,7 @@ public class NewYearDayRadiantView extends View{
      */
     private void startLenternAnimator(){
         isLanternScale = true;
-        AnimatorSet animatorSet = new AnimatorSet();//动画集合
+        final AnimatorSet animatorSet = new AnimatorSet();//动画集合
         List<Animator> animators = new ArrayList<>(2);
         ValueAnimator scaleAnimator = ValueAnimator.ofFloat(mLenternScaleX,2.0f);
         scaleAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -395,7 +395,7 @@ public class NewYearDayRadiantView extends View{
             @Override
             public void onAnimationEnd(Animator animation) {
                 startRedEnvelopeAnimator();//调用四个红包动画
-
+                animatorSet.cancel();
             }
 
             @Override
