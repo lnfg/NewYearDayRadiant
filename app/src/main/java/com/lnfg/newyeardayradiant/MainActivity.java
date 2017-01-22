@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         dd = (NewYearDayRadiantView)findViewById(R.id.dd);
 
-//�õİ�
+//好的吧
 //        dd.start();
 //        ScaleAnimation scaleAnimation = new ScaleAnimation(1.0f,2.0f,1.0f,2.0f);
 //        scaleAnimation.setDuration(3500);
