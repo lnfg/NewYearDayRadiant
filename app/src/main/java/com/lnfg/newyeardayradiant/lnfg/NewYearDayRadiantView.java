@@ -484,7 +484,7 @@ public class NewYearDayRadiantView extends View{
     }
     /*对外提供调用*/
     public void start(){
-        startLenternAnimator();
+        startLenternAnimator();//
     }
 
 }
