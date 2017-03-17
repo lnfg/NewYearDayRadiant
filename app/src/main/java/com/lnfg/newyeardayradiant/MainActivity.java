@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);//真的改了大多数
+        setContentView(R.layout.activity_main);//修改版本
 
         dd = (NewYearDayRadiantView)findViewById(R.id.dd);
 
